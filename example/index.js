@@ -15,7 +15,6 @@ nunjucks.configure(views, { express: app });
 
 app.use(sass({
     src: path.resolve(__dirname, '../styles'),
-    debug: true,
     outputStyle: 'compressed',
     prefix: '/styles',
     response: true,
