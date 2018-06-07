@@ -51,3 +51,15 @@ The default css styles are provided as sass files. To include these in a project
 ```
 
 Note: you will need to set the `includePaths` option in your sass compiler to include your project's local `node_modules` directory.
+
+### Colours
+
+A number of colour variables are defined in sass as shortcuts
+
+* <img src="./docs/images/colours/ho-brand.svg" width="20" height="20" /> `$ho-brand` - `#8F23B3` (alias `$purple`)
+* <img src="./docs/images/colours/background.svg" width="20" height="20" /> `$background` - `#F3F3F3` (alias `$light-grey`)
+* <img src="./docs/images/colours/black.svg" width="20" height="20" /> `$black` - `#0B0C0C`
+* <img src="./docs/images/colours/green.svg" width="20" height="20" /> `$green` - `#3D5C00`
+* <img src="./docs/images/colours/blue.svg" width="20" height="20" /> `$blue` - `#005EA5`
+* <img src="./docs/images/colours/dark-grey.svg" width="20" height="20" /> `$dark-grey` - `#3B3B3B`
+* <img src="./docs/images/colours/mid-grey.svg" width="20" height="20" /> `$mid-grey` - `#DADADA`
