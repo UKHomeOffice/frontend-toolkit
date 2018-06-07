@@ -1,0 +1,29 @@
+{% macro footer(
+  text='A Home Office Digital, Data and Technology service',
+  menu=[]
+  ) %}
+<footer>
+  <div class="wrapper-footer">
+    <div>
+      <p>{{text}}</p>
+    </div>
+    {% if menu.length %}
+      <div class="footer-menu">
+        <ul>
+        {% for item in menu %}
+          <li>
+          {% if item.href %}
+            <a href="{{item.href}}">{{item.text}}</a>
+          {% elif item.text %}
+            {{item.text}}
+          {% else %}
+            {{item}}
+          {% endif %}
+          </li>
+        {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+  </div>
+</footer>
+{% endmacro %}

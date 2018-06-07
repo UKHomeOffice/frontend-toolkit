@@ -1,0 +1,11 @@
+pipeline:
+  publish:
+    image: plugins/npm
+    secrets:
+      - npm_token
+      - npm_email
+    token: ${NPM_TOKEN}
+    email: ${NPM_EMAIL}
+    when:
+      event: tag
+      branch: master

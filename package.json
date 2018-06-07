@@ -1,0 +1,21 @@
+{
+  "name": "@ukhomeoffice/frontend-toolkit",
+  "version": "0.0.0",
+  "description": "Implementation of github.com/UKHomeOffice/design-system for use in projects",
+  "main": "index.js",
+  "styles": "./styles/index.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UKHomeOffice/frontend-toolkit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/UKHomeOffice/frontend-toolkit/issues"
+  },
+  "homepage": "https://github.com/UKHomeOffice/frontend-toolkit#readme"
+}

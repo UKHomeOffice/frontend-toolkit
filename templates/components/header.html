@@ -1,0 +1,33 @@
+{% macro header(
+  title='',
+  home='/',
+  menu=[]
+  ) %}
+<header role="banner">
+  <div class="font-ui wrapper-header__library">
+    <div class="header-logo">
+      {% include "svg/ho-logo.html" %}
+    </div>
+    <div class="header-title">
+      <a href="{{home}}" class="header-name">{{title}}</a>
+    </div>
+    {% if menu.length %}
+      <div class="header-menu">
+        <ul>
+        {% for item in menu %}
+          <li>
+          {% if item.href %}
+            <a href="{{item.href}}">{{item.text}}</a>
+          {% elif item.text %}
+            {{item.text}}
+          {% else %}
+            {{item}}
+          {% endif %}
+          </li>
+        {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+  </div>
+</header>
+{% endmacro %}
