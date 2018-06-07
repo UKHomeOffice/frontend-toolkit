@@ -26,5 +26,8 @@
   "dependencies": {
     "govuk-elements-sass": "^3.1.2",
     "govuk_frontend_toolkit": "^7.5.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
