@@ -41,3 +41,13 @@ The following components are available:
 
 * [header](./docs/components/header.md)
 * [footer](./docs/components/footer.md)
+
+## Styles
+
+The default css styles are provided as sass files. To include these in a project add the following line to your project's sass:
+
+```sass
+@import "@ukhomeoffice/frontend-toolkit/styles/index";
+```
+
+Note: you will need to set the `includePaths` option in your sass compiler to include your project's local `node_modules` directory.
