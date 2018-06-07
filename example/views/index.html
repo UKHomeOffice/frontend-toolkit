@@ -1,0 +1,40 @@
+{% from "components/header.html" import header %}
+{% from "components/footer.html" import footer %}
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/styles/index.css" />
+  </head>
+  <body>
+    {{
+      header('Frontend toolkit example')
+    }}
+    <main class="font-ui" id="content" role="main">
+      <div class="grid-row">
+        <div class="column-two-thirds">
+
+          <h1 class="heading-xlarge">Home Office frontend toolkit</h1>
+
+          <p class="lede">
+            This is an example application showing how the components included in the Home Office frontend toolkit might be used.
+          </p>
+
+          <h2 class="heading-large">This is a second level heading</h2>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra lectus ipsum, eu consectetur ex sodales posuere. Maecenas a ultrices ipsum. Aliquam diam turpis, tincidunt cursus est eu, dignissim tincidunt nibh. Proin viverra porta massa, sed blandit quam bibendum ut. Fusce elit mauris, ultrices ac iaculis eu, semper in justo. Donec finibus vel mauris non elementum. Nam sit amet gravida nisl. Aenean sit amet luctus risus, eu vulputate turpis. In ac ullamcorper lorem, pharetra commodo odio. Proin dui lacus, lacinia a vehicula ut, tempus imperdiet justo. Vivamus scelerisque arcu nec nulla porta, vitae convallis lectus dapibus. Aenean dapibus ornare libero vel hendrerit. Pellentesque placerat dignissim metus sit amet molestie.</p>
+
+          <h3 class="heading-medium">This is a third level heading</h3>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra lectus ipsum, eu consectetur ex sodales posuere. Maecenas a ultrices ipsum. Aliquam diam turpis, tincidunt cursus est eu, dignissim tincidunt nibh. Proin viverra porta massa, sed blandit quam bibendum ut. Fusce elit mauris, ultrices ac iaculis eu, semper in justo. Donec finibus vel mauris non elementum. Nam sit amet gravida nisl. Aenean sit amet luctus risus, eu vulputate turpis. In ac ullamcorper lorem, pharetra commodo odio. Proin dui lacus, lacinia a vehicula ut, tempus imperdiet justo. Vivamus scelerisque arcu nec nulla porta, vitae convallis lectus dapibus. Aenean dapibus ornare libero vel hendrerit. Pellentesque placerat dignissim metus sit amet molestie.</p>
+
+          <h4 class="heading-small">This is a fourth level heading</h4>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra lectus ipsum, eu consectetur ex sodales posuere. Maecenas a ultrices ipsum. Aliquam diam turpis, tincidunt cursus est eu, dignissim tincidunt nibh. Proin viverra porta massa, sed blandit quam bibendum ut. Fusce elit mauris, ultrices ac iaculis eu, semper in justo. Donec finibus vel mauris non elementum. Nam sit amet gravida nisl. Aenean sit amet luctus risus, eu vulputate turpis. In ac ullamcorper lorem, pharetra commodo odio. Proin dui lacus, lacinia a vehicula ut, tempus imperdiet justo. Vivamus scelerisque arcu nec nulla porta, vitae convallis lectus dapibus. Aenean dapibus ornare libero vel hendrerit. Pellentesque placerat dignissim metus sit amet molestie.</p>
+        </div>
+      </div>
+    </main>
+    {{
+      footer()
+    }}
+  </body>
+</html>
