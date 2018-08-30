@@ -1,0 +1,33 @@
+.quote {
+  font-style: italic;
+  margin-left: 40px;
+}
+
+@media (max-width: 640px) {
+  .quote {
+    margin-left: 10px;
+  }
+}
+
+// Headers
+
+.heading-xlarge, .heading-section {
+  font-size: 40px;
+  line-height: 1.3;
+}
+
+.heading-large {
+  font-size: 32px;
+  line-height: 1.3;
+}
+
+.heading-medium {
+  font-size: 24px;
+  line-height: 1.3;
+}
+
+.heading-small {
+  font-size: 18px;
+  line-height: 1.45;
+}
+
