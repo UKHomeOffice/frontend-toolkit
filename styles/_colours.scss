@@ -4,9 +4,13 @@ $black: #0B0C0C;
 $background: #F3F3F3;
 
 // secondary colours
+$white: #FFFFFF;
 $green: #3D5C00;
 $blue: #005EA5;
 $purple: $ho-brand;
 $dark-grey: #3B3B3B;
 $mid-grey: #DADADA;
 $light-grey: $background;
+
+// previously provided by frontend-toolkit
+$panel-colour: govuk-colour("grey-3");
