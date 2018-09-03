@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Implementation of github.com/UKHomeOffice/design-system for use in projects",
   "main": "index.js",
-  "styles": "./styles/index.scss",
+  "styles": "./assets/styles/index.scss",
   "scripts": {
     "test": "npm run test:lint",
     "test:lint": "sass-lint --no-exit --verbose"

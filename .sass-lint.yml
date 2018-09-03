@@ -1,2 +1,2 @@
 files:
-  include: 'styles/**/*.s+(a|c)ss'
+  include: 'assets/styles/**/*.s+(a|c)ss'
