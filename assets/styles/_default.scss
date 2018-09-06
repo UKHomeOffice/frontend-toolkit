@@ -2,7 +2,7 @@
 // Inter UI and style overrides
 
 .nta-font {
-  font-family: 'nta', Arial, sans-serif!important;
+  font-family: 'nta', Arial, sans-serif !important;
 }
 
 header, footer {
@@ -11,12 +11,12 @@ header, footer {
 
 main, .heading-section, .heading-xlarge, .heading-large, .heading-medium, .heading-small, .lede, .navbar, table td, .navbar .navbar__list-items li a {
   font-family: 'Inter UI', sans-serif;
-  line-height: 1.45!important;
+  line-height: 1.45 !important;
 }
 
 body {
   font-family: 'Inter UI', sans-serif;
-  line-height: 1.45!important;
+  line-height: 1.45 !important;
   background-color: $background;
 }
 
@@ -32,7 +32,7 @@ main, table td, .navbar .navbar__list-items li a {
 @media (max-width: 640px) {
 
   body, main, .heading-section, .heading-xlarge, .heading-large, .heading-medium, .heading-small, .lede, .navbar, table td, .navbar .navbar__list-items li a {
-    line-height: 1.35!important;
+    line-height: 1.35 !important;
   }
 
   main, table td, .navbar .navbar__list-items li a {
