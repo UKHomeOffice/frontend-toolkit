@@ -1,2 +1,7 @@
 files:
   include: 'assets/styles/**/*.s+(a|c)ss'
+
+rules:
+  class-name-format: 0
+  property-sort-order: 0
+  single-line-per-selector: 0
