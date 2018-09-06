@@ -2,11 +2,6 @@ pipeline:
 
   test:
     image: plugins/npm
-    secrets:
-      - npm_token
-      - npm_email
-    token: ${NPM_TOKEN}
-    email: ${NPM_EMAIL}
     commands:
       - npm ci
       - npm test
