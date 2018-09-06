@@ -11,35 +11,13 @@
   p {
     margin-bottom: 0;
   }
-
 }
 
 footer {
-  border-top: 2px #ccc solid;
+  border-top: 1px govuk-colour("grey-2") solid;
 
   // extend the white background to the bottom of the browser on short pages
   box-shadow: 0 50vh 0 50vh $white;
-}
-
-.footer-menu {
-  align-items: flex-end;
-  display: flex;
-
-  ul {
-    display: flex;
-
-    li {
-      padding-left: 1.5em;
-
-      &:first-child {
-        padding-left: 0;
-      }
-
-      a {
-        color: $dark-grey;
-      }
-    }
-  }
 }
 
 @media (max-width: 690px) {
