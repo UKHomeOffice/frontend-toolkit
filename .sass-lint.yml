@@ -1,6 +1,7 @@
 files:
   include: 'assets/styles/**/*.s+(a|c)ss'
 
+# see https://github.com/sasstools/sass-lint/tree/master/docs/rules
 rules:
   class-name-format: 0
   force-element-nesting: 0
