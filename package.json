@@ -1,6 +1,6 @@
 {
   "name": "@ukhomeoffice/frontend-toolkit",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Implementation of github.com/UKHomeOffice/design-system for use in projects",
   "main": "index.js",
   "styles": "./assets/styles/index.scss",
