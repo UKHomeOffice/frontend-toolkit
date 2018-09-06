@@ -6,42 +6,19 @@
   margin: 0 auto;
   justify-content: space-between;
   font-size: 14px;
-  font-family: 'Inter UI', sans-serif!important;
+  font-family: 'Inter UI', sans-serif !important;
 
   p {
     margin-bottom: 0;
   }
-
 }
 
 footer {
-  border-top: 2px #CCC solid;
+  border-top: 1px govuk-colour('grey-2') solid;
 
   // extend the white background to the bottom of the browser on short pages
-  box-shadow: 0 50vh 0 50vh #ffffff;
+  box-shadow: 0 50vh 0 50vh $white;
 }
-
-.footer-menu {
-  align-items: flex-end;
-  display: flex;
-}
-
-.footer-menu ul {
-  display: flex;
-
-  li {
-    padding-left: 1.5em;
-  }
-
-  li a {
-    color: $dark-grey;
-  }
-
-  li:first-child {
-    padding-left: 0;
-  }
-}
-
 
 @media (max-width: 690px) {
 
