@@ -6,7 +6,7 @@
   "styles": "./assets/styles/index.scss",
   "scripts": {
     "test": "npm run test:lint",
-    "test:lint": "sass-lint --no-exit --verbose"
+    "test:lint": "sass-lint --max-warnings=0 --no-exit --verbose"
   },
   "repository": {
     "type": "git",
