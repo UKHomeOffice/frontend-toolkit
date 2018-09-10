@@ -24,7 +24,7 @@ button:focus {
   outline-offset: 0;
 }
 
-@include govuk-media-query($from: tablet) {
+@include govuk-media-query($until: tablet) {
   body, main, .heading-section, .heading-xlarge, .heading-large, .heading-medium, .heading-small, .lede, .navbar, table td, .navbar .navbar__list-items li a {
     line-height: 1.35 !important;
   }

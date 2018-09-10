@@ -15,7 +15,7 @@ body {
   margin-left: 40px;
 }
 
-@include govuk-media-query($from: tablet) {
+@include govuk-media-query($until: tablet) {
   .quote {
     margin-left: 10px;
   }
