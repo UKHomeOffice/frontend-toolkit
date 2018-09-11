@@ -87,8 +87,3 @@ A number of colour variables are defined in sass as shortcuts
 * <img src="./docs/images/colours/ho-link-visited.svg" width="20" height="20" /> `$ho-link-visited` - `#4C2C92`
 * <img src="./docs/images/colours/ho-link-hover.svg" width="20" height="20" /> `$ho-link-hover` - `#2B8CC4` (alias `$ho-link-active`)
 * <img src="./docs/images/colours/ho-link-focus.svg" width="20" height="20" /> `$ho-link-focus` - `#005798`
-
-$ho-link-visited: #4c2c92;
-$ho-link-hover: #2b8cc4;
-$ho-link-active: #2b8cc4;
-$ho-link-focus: #005798;
