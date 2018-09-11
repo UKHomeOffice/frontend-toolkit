@@ -1,3 +1,8 @@
+// The $govuk-font-family var must be set in order to prevent govuk-frontend components injecting their own 'nta'
+// font-face declarations. If you choose to bring components directly into your project from govuk-frontend rather than
+// via the proxies provided here, then you must make sure this var is declared before those includes.
+$govuk-font-family: 'Inter UI', Helvetica, Arial, sans-serif !default;
+
 @import 'reset';
 @import 'govuk-frontend';
 
