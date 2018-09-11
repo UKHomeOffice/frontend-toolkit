@@ -66,6 +66,11 @@ proxies to `govuk-frontend` components, you will need to import each sass file i
 @import '@ukhomeoffice/frontend-toolkit/assets/styles/components/phase-banner';
 ```
 
+Note: please be aware that the `$govuk-font-family` variable must be set in order to prevent govuk-frontend components
+injecting their own 'nta' font-face declarations into your compiled CSS. This is done by default in `index.scss` and can
+be overridden. If you choose to bring components directly into your project from govuk-frontend rather than via the
+proxies provided here, then you must make sure that `$govuk-font-family` is declared before those includes.
+
 ### Colours
 
 A number of colour variables are defined in sass as shortcuts
