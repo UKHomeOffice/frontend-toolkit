@@ -1,3 +1,6 @@
+// the var below must be set in order to prevent govuk-frontend components attempting to bring in their own "nta" font
+$govuk-font-family: 'Inter UI', sans-serif !default;
+
 @import 'reset';
 @import 'govuk-frontend';
 
