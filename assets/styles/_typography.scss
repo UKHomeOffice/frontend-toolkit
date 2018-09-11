@@ -3,7 +3,7 @@ $govuk-font-family: 'Inter UI', sans-serif !default;
 body {
   background-color: $background;
   color: $black;
-  line-height: 1.45 !important;
+  line-height: 1.45;
   font-family: $govuk-font-family;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
