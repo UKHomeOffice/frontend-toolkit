@@ -78,7 +78,17 @@ A number of colour variables are defined in sass as shortcuts
 * <img src="./docs/images/colours/ho-brand.svg" width="20" height="20" /> `$ho-brand` - `#8F23B3` (alias `$purple`)
 * <img src="./docs/images/colours/background.svg" width="20" height="20" /> `$background` - `#F3F3F3` (alias `$light-grey`)
 * <img src="./docs/images/colours/black.svg" width="20" height="20" /> `$black` - `#0B0C0C`
+* <img src="./docs/images/colours/white.svg" width="20" height="20" /> `$white` - `#FFFFFF`
 * <img src="./docs/images/colours/green.svg" width="20" height="20" /> `$green` - `#3D5C00`
-* <img src="./docs/images/colours/blue.svg" width="20" height="20" /> `$blue` - `#005EA5`
+* <img src="./docs/images/colours/blue.svg" width="20" height="20" /> `$blue` - `#005EA5` (alias `$ho-link`)
 * <img src="./docs/images/colours/dark-grey.svg" width="20" height="20" /> `$dark-grey` - `#3B3B3B`
 * <img src="./docs/images/colours/mid-grey.svg" width="20" height="20" /> `$mid-grey` - `#DADADA`
+* <img src="./docs/images/colours/ho-focus.svg" width="20" height="20" /> `$ho-focus` - `#FFBF47`
+* <img src="./docs/images/colours/ho-link-visited.svg" width="20" height="20" /> `$ho-link-visited` - `#4C2C92`
+* <img src="./docs/images/colours/ho-link-hover.svg" width="20" height="20" /> `$ho-link-hover` - `#2B8CC4` (alias `$ho-link-active`)
+* <img src="./docs/images/colours/ho-link-focus.svg" width="20" height="20" /> `$ho-link-focus` - `#005798`
+
+$ho-link-visited: #4c2c92;
+$ho-link-hover: #2b8cc4;
+$ho-link-active: #2b8cc4;
+$ho-link-focus: #005798;
