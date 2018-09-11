@@ -27,7 +27,8 @@ This will allow simple reference to the components when using them in templates.
 
 #### Using without express
 
-If you are not using express, and so cannot make use of its `views` stack, then you will need to provide a full path when importing components. The easiest way to do this is to expose a `componentPath` property to your templates.
+If you are not using express, and so cannot make use of its `views` stack, then you will need to provide a full path
+when importing components. The easiest way to do this is to expose a `componentPath` property to your templates.
 
 ```
 {% set componentPath = '/path/to/frontend/toolkit/templates/' %}
@@ -44,13 +45,26 @@ The following components are available:
 
 ## Styles
 
-The default css styles are provided as sass files. To include these in a project add the following line to your project's sass:
+The default css styles are provided as sass files. To include these in a project add the following line to your
+project's sass:
 
 ```sass
-@import "@ukhomeoffice/frontend-toolkit/styles/index";
+@import "@ukhomeoffice/frontend-toolkit";
 ```
 
-Note: you will need to set the `includePaths` option in your sass compiler to include your project's local `node_modules` directory.
+Note: you will need to set the `includePaths` option in your sass compiler to include your project's local
+`node_modules` directory.
+
+### Components
+
+The header and footer styling is automatically included with the core styles. For all other components, including the
+proxies to `govuk-frontend` components, you will need to import each sass file individually:
+
+```sass
+@import '@ukhomeoffice/frontend-toolkit/assets/styles/components/breadcrumbs';
+@import '@ukhomeoffice/frontend-toolkit/assets/styles/components/error-summary';
+@import '@ukhomeoffice/frontend-toolkit/assets/styles/components/phase-banner';
+```
 
 ### Colours
 
