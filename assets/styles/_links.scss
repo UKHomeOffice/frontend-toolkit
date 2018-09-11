@@ -1,0 +1,30 @@
+a:link {
+  color: $ho-link;
+}
+
+a:visited {
+  color: $ho-link-visited;
+}
+
+a:hover {
+  color: $ho-link-hover;
+}
+
+a:active {
+  color: $ho-link-active;
+}
+
+/* Give a strong clear visual idea as to what is currently in focus */
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+}
+
+a:focus {
+  background-color: $ho-focus;
+  outline: 3px solid $ho-focus;
+}
+
+/* Make links slightly darker when focused to improve contrast. */
+a:link:focus {
+  color: $ho-link-focus;
+}
