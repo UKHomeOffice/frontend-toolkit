@@ -82,6 +82,10 @@ ol, ul, nav ol, nav ul {
   list-style: inherit;
 }
 
+ol li, ul li {
+  margin-left: 20px;
+}
+
 fieldset {
   border: 0;
   padding: 0;
