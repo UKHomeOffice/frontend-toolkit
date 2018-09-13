@@ -1,0 +1,15 @@
+@import 'govuk-frontend/components/table/table';
+
+.govuk-table {
+  caption {
+    @extend .govuk-table__caption;
+  }
+
+  th {
+    @extend .govuk-table__header;
+  }
+
+  td {
+    @extend .govuk-table__cell;
+  }
+}
