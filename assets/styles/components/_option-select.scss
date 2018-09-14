@@ -1,16 +1,6 @@
-@include govuk-media-query($until: tablet) {
-  .multiple-choice--hod {
-    .multiple-choice {
-      margin-bottom: 15px;
-      padding-top: 4px;
-    }
-  }
-}
-
 .app-c-option-select {
   @include govuk-media-query($from: desktop) {
-    // Redefine scrollbars on desktop where these lists are scrollable
-    // so they are always visible in option lists
+    // Redefine scrollbars on desktop where these lists are scrollable so they are always visible in option lists
     ::-webkit-scrollbar {
       -webkit-appearance: none;
       width: 7px;
@@ -18,10 +8,8 @@
 
     ::-webkit-scrollbar-thumb {
       border-radius: 4px;
-
-      // scss-lint:disable ColorVariable
       background-color: rgba(0, 0, 0, .5);
-      -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+      box-shadow: 0 0 1px rgba(255, 255, 255, .5);
     }
   }
 
@@ -42,40 +30,6 @@
     margin-right: 40px;
     font-weight: bold;
     padding-top: 5px;
-  }
-
-  .options-container {
-    @include govuk-media-query($from: desktop) {
-      max-height: 200px;
-    }
-
-    position: relative;
-    background-color: $background;
-    overflow-y: auto;
-    overflow-x: hidden;
-    border: 5px solid govuk-colour('grey-3');
-
-    label {
-      @include govuk-media-query($from: desktop) {
-        // leave space to interact with the scroll bars on desktop
-        width: 90%;
-      }
-
-      display: block;
-      padding: 7px 7px 7px 35px;
-      cursor: pointer;
-
-      &:hover {
-        background-color: govuk-colour('grey-4');
-      }
-    }
-
-    input[type='checkbox'] {
-      float: left;
-      margin: 2px 0 0 -27px;
-      width: 20px;
-      height: 20px;
-    }
   }
 
   .js-selected-counter {
@@ -126,34 +80,53 @@
   }
 }
 
-.options-container.options-container--hod {
-  .multiple-choice {
-    padding: 1px 0 2px;
+.options-container--hod {
+  @include govuk-media-query($from: desktop) {
+    max-height: 200px;
+  }
+
+  position: relative;
+  background-color: $background;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 5px solid govuk-colour('grey-3');
+
+  .govuk-checkboxes__item {
+    @include govuk-media-query($until: tablet) {
+      margin-bottom: 15px;
+      padding-top: 4px;
+    }
+
+    padding: 0;
     margin-bottom: 0;
 
-    .govuk-label {
+    label {
+      @include govuk-media-query($from: desktop) {
+        // leave space to interact with the scroll bars on desktop
+        width: 95%;
+      }
+
+      display: block;
+      box-sizing: border-box;
+      padding: 4px 7px 7px 44px;
+      width: 100%;
       font-weight: normal;
+      cursor: pointer;
     }
-  }
 
-  label {
-    padding: 4px 7px 7px 44px;
-    width: 100%;
-    box-sizing: border-box;
-  }
+    [type='checkbox'] + label::before {
+      width: 18px;
+      height: 18px;
+      top: 7px;
+      left: 12px;
+    }
 
-  [type='checkbox'] + label::before {
-    width: 18px;
-    height: 18px;
-    top: 7px;
-    left: 12px;
-  }
-
-  [type='checkbox'] + label::after {
-    border-width: 0 0 3px 3px;
-    width: 11px;
-    height: 4px;
-    top: 13px;
-    left: 16px;
+    [type='checkbox'] + label::after {
+      border-width: 0 0 3px 3px;
+      width: 11px;
+      height: 4px;
+      top: 13px;
+      left: 16px;
+    }
   }
 }
