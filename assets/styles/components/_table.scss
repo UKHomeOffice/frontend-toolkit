@@ -1,0 +1,17 @@
+@import 'govuk-frontend/components/table/table';
+
+// remove the need to add redundant child classes to our table markup
+// sass-lint:disable placeholder-in-extend
+.govuk-table {
+  caption {
+    @extend .govuk-table__caption;
+  }
+
+  th {
+    @extend .govuk-table__header;
+  }
+
+  td {
+    @extend .govuk-table__cell;
+  }
+}

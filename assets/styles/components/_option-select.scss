@@ -1,0 +1,132 @@
+.app-c-option-select {
+  @include govuk-media-query($from: desktop) {
+    // Redefine scrollbars on desktop where these lists are scrollable so they are always visible in option lists
+    ::-webkit-scrollbar {
+      -webkit-appearance: none;
+      width: 7px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      border-radius: 4px;
+      background-color: rgba(0, 0, 0, .5);
+      box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+    }
+  }
+
+  background-color: govuk-colour('grey-3');
+  padding: 5px;
+  margin-bottom: $govuk-gutter;
+
+  &:focus {
+    outline: 3px solid $ho-focus;
+  }
+
+  .container-head {
+    padding: 0 5px;
+  }
+
+  .option-select-label {
+    @include govuk-font(19);
+    margin-right: 40px;
+    font-weight: bold;
+    padding-top: 5px;
+  }
+
+  .js-selected-counter {
+    @include govuk-font(14);
+  }
+
+  // styles for collapsibleness. .js-collapsible is added by the javascript if the browser is not ie6/7 in which case these don't collapse
+  &.js-collapsible {
+    button {
+      @include govuk-device-pixel-ratio {
+        background-size: 32px 50px;
+      }
+
+      z-index: 100;
+      position: relative;
+      border: 0;
+      display: block;
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+      margin-bottom: -1px;
+      padding: 5px 8px;
+      background-color: govuk-colour('grey-3');
+
+      &:hover {
+        background-color: govuk-colour('grey-2');
+      }
+
+      &:hover + .options-container {
+        border-color: govuk-colour('grey-2');
+      }
+
+      &[disabled] {
+        background-image: none;
+        color: inherit;
+      }
+    }
+
+    &.js-closed {
+      button {
+        background-position: right -75px;
+      }
+
+      .options-container {
+        display: none;
+      }
+    }
+  }
+}
+
+.options-container--hod {
+  @include govuk-media-query($from: desktop) {
+    max-height: 200px;
+  }
+
+  position: relative;
+  background-color: $background;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 5px solid govuk-colour('grey-3');
+
+  .govuk-checkboxes__item {
+    @include govuk-media-query($until: tablet) {
+      margin-bottom: 15px;
+      padding-top: 4px;
+    }
+
+    padding: 0;
+    margin-bottom: 0;
+
+    label {
+      @include govuk-media-query($from: desktop) {
+        // leave space to interact with the scroll bars on desktop
+        width: 95%;
+      }
+
+      display: block;
+      box-sizing: border-box;
+      padding: 4px 7px 7px 44px;
+      width: 100%;
+      font-weight: normal;
+      cursor: pointer;
+    }
+
+    [type='checkbox'] + label::before {
+      width: 18px;
+      height: 18px;
+      top: 7px;
+      left: 12px;
+    }
+
+    [type='checkbox'] + label::after {
+      border-width: 0 0 3px 3px;
+      width: 11px;
+      height: 4px;
+      top: 13px;
+      left: 16px;
+    }
+  }
+}
