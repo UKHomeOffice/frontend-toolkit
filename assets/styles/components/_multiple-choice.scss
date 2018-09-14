@@ -1,36 +1,3 @@
-.multiple-choice--hod {
-  .multiple-choice {
-    padding: 1px 0 2px 0;
-    margin-bottom: 0;
-
-    .govuk-label {
-      font-weight: normal;
-    }
-  }
-
-  label {
-    padding: 4px 7px 7px 44px;
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  [type=checkbox] + label::before {
-    width: 18px;
-    height: 18px;
-    top: 7px;
-    left: 12px;
-  }
-
-  [type=checkbox] + label::after {
-    border-width: 0 0 3px 3px;
-    width: 11px;
-    height: 4px;
-    top: 13px;
-    left: 16px;
-  }
-
-}
-
 @include govuk-media-query($until: tablet) {
   .multiple-choice--hod {
     .multiple-choice {
@@ -41,10 +8,6 @@
 }
 
 .app-c-option-select {
-  background-color: govuk-colour('grey-3');
-  padding: 5px;
-  margin-bottom: $govuk-gutter;
-
   @include govuk-media-query($from: desktop) {
     // Redefine scrollbars on desktop where these lists are scrollable
     // so they are always visible in option lists
@@ -62,6 +25,10 @@
     }
   }
 
+  background-color: govuk-colour('grey-3');
+  padding: 5px;
+  margin-bottom: $govuk-gutter;
+
   &:focus {
     outline: 3px solid $ho-focus;
   }
@@ -78,31 +45,32 @@
   }
 
   .options-container {
-    position: relative;
-    background-color: $background;
-    overflow-y: auto;
-    overflow-x: hidden;
-
     @include govuk-media-query($from: desktop) {
       max-height: 200px;
     }
 
-    label {
-      display: block;
-      padding: 7px 7px 7px 35px;
-      cursor: pointer;
+    position: relative;
+    background-color: $background;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 5px solid govuk-colour('grey-3');
 
+    label {
       @include govuk-media-query($from: desktop) {
         // leave space to interact with the scroll bars on desktop
         width: 90%;
       }
+
+      display: block;
+      padding: 7px 7px 7px 35px;
+      cursor: pointer;
 
       &:hover {
         background-color: govuk-colour('grey-4');
       }
     }
 
-    input[type=checkbox] {
+    input[type='checkbox'] {
       float: left;
       margin: 2px 0 0 -27px;
       width: 20px;
@@ -110,22 +78,20 @@
     }
   }
 
-  padding: 0 0 1px;
-
   .js-selected-counter {
     @include govuk-font(14);
-  }
-
-  .options-container {
-    border: 5px solid govuk-colour('grey-3');
   }
 
   // styles for collapsibleness. .js-collapsible is added by the javascript if the browser is not ie6/7 in which case these don't collapse
   &.js-collapsible {
     button {
+      @include govuk-device-pixel-ratio {
+        background-size: 32px 50px;
+      }
+
       z-index: 100;
       position: relative;
-      border: none;
+      border: 0;
       display: block;
       width: 100%;
       text-align: left;
@@ -133,10 +99,6 @@
       margin-bottom: -1px;
       padding: 5px 8px;
       background-color: govuk-colour('grey-3');
-
-      @include govuk-device-pixel-ratio() {
-        background-size: 32px 50px;
-      }
 
       &:hover {
         background-color: govuk-colour('grey-2');
@@ -166,25 +128,28 @@
 
 .options-container.options-container--hod {
   .multiple-choice {
-    padding: 0;
-    float: none;
+    padding: 1px 0 2px;
     margin-bottom: 0;
+
+    .govuk-label {
+      font-weight: normal;
+    }
   }
 
   label {
-    padding: 7px 7px 7px 44px;
+    padding: 4px 7px 7px 44px;
     width: 100%;
     box-sizing: border-box;
   }
 
-  [type=checkbox] + label::before {
+  [type='checkbox'] + label::before {
     width: 18px;
     height: 18px;
     top: 7px;
     left: 12px;
   }
 
-  [type=checkbox] + label::after {
+  [type='checkbox'] + label::after {
     border-width: 0 0 3px 3px;
     width: 11px;
     height: 4px;
