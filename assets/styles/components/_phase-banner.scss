@@ -1,1 +1,29 @@
 @import 'govuk-frontend/components/phase-banner/phase-banner';
+
+.govuk-phase-banner {
+  background-color: $blue;
+  color: $white;
+  border-bottom: none;
+  position: fixed;
+  z-index: 1000;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0 8px;
+}
+
+.govuk-phase-banner__content__tag {
+  padding: 0;
+  margin-right: 20px;
+}
+
+.govuk-phase-banner__content {
+  color: $white;
+
+  a {
+    &:link,
+    &:visited,
+    &:hover {
+      color: $white;
+    }
+  }
+}
