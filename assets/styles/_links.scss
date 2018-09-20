@@ -1,17 +1,33 @@
 a:link {
   color: $ho-link;
+
+  h2 {
+    color: $ho-link;
+  }
 }
 
 a:visited {
   color: $ho-link-visited;
+
+  h2 {
+    color: $ho-link-visited;
+  }
 }
 
 a:hover {
   color: $ho-link-hover;
+
+  h2 {
+    color: $ho-link-hover;
+  }
 }
 
 a:active {
   color: $ho-link-active;
+
+  h2 {
+    color: $ho-link-active;
+  }
 }
 
 /* Give a strong clear visual idea as to what is currently in focus */
