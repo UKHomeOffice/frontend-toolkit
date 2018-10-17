@@ -1,16 +1,1 @@
 @import 'govuk-frontend/components/radios/radios';
-
-.govuk-radios [type='radio'] + label::before {
-  width: 24px;
-  height: 24px;
-}
-
-.govuk-radios [type='radio'] + label::after {
-  border: 7px solid;
-  top: 5px;
-  left: 5px;
-}
-
-.govuk-radios__label {
-  padding: 0;
-}
