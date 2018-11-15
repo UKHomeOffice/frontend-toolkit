@@ -1,1 +1,7 @@
 @import 'govuk-frontend/components/radios/radios';
+
+// override to prevent indent on conditional reveal children
+.govuk-radios__item > .govuk-reveal {
+  margin-top: $govuk-gutter / 2;
+  margin-left: -24px;
+}
