@@ -4,4 +4,8 @@
 .govuk-checkboxes__item > .govuk-reveal {
   margin-top: $govuk-gutter / 2;
   margin-left: -24px;
+
+  &.hidden {
+    display: none;
+  }
 }
