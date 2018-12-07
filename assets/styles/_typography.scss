@@ -8,10 +8,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-ol li, ul li {
-  list-style-position: inside;
-}
-
 hr {
   border: 1px solid govuk-colour('grey-2');
   margin-bottom: $govuk-gutter;
