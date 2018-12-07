@@ -1,1 +1,13 @@
 @import 'govuk-frontend/components/hint/hint';
+
+.govuk-hint {
+  ul, ol {
+    margin-left: $govuk-gutter-half;
+
+    li {
+      text-indent: -26px;
+      padding-left: 26px;
+      margin-bottom: 10px;
+    }
+  }
+}

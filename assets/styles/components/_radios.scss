@@ -9,3 +9,11 @@
     display: none;
   }
 }
+
+.govuk-radios__item {
+  margin-bottom: $govuk-gutter;
+
+  .govuk-hint {
+    margin-left: $govuk-gutter-half;
+  }
+}
