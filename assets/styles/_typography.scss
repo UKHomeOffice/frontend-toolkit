@@ -8,6 +8,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+hr {
+  border: 1px solid govuk-colour('grey-2');
+  margin-bottom: $govuk-gutter;
+}
+
 .quote {
   font-style: italic;
   margin-left: 40px;

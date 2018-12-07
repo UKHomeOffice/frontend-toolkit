@@ -19,9 +19,6 @@ header,
 hgroup,
 nav,
 section,
-ol,
-ul,
-li,
 dl,
 dt,
 dd,
@@ -76,14 +73,6 @@ html {
 body {
   font-size: 160%;
   /* 1 */
-}
-
-ol, ul, nav ol, nav ul {
-  list-style: inherit;
-}
-
-ol li, ul li {
-  list-style-position: inside;
 }
 
 fieldset {
