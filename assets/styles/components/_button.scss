@@ -1,1 +1,13 @@
 @import 'govuk-frontend/components/button/button';
+
+.govuk-button {
+  &.button-secondary {
+    background: $white;
+    color: $govuk-text-colour;
+    border: 1px solid $govuk-border-colour;
+
+    &:hover {
+      background: $light-grey;
+    }
+  }
+}
