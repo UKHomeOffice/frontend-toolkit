@@ -9,3 +9,8 @@
     display: none;
   }
 }
+
+// padding to bring in line with label
+.govuk-radios__item > .govuk-hint {
+  padding-left: 15px;
+}
