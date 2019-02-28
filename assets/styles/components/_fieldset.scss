@@ -3,3 +3,81 @@
 .govuk-fieldset__heading {
   font-weight: bold;
 }
+
+.govuk-fieldset.inline {
+  > .govuk-radios > .govuk-radios__item,
+  > .govuk-checkboxes > .govuk-checkboxes__item {
+    display: inline-block;
+    margin-right: $govuk-gutter;
+  }
+}
+
+.govuk-fieldset.smaller {
+  .govuk-radios [type='radio'] + label::before {
+    width: 24px;
+    height: 24px;
+  }
+
+  .govuk-radios__item {
+    min-height: auto;
+  }
+
+  .govuk-radios [type='radio'] + label::after {
+    border: 7px solid;
+    top: 5px;
+    left: 5px;
+  }
+
+  .govuk-radios__label {
+    padding: 0;
+  }
+
+  .govuk-checkboxes {
+    .multiple-choice {
+      padding-top: 1px;
+      padding-bottom: 2px;
+    }
+
+    .govuk-checkboxes__label {
+      padding: 3px 2px 5px;
+    }
+
+    .govuk-checkboxes__item {
+      margin-bottom: 0;
+    }
+  }
+
+  .govuk-checkboxes [type='checkbox'] + label::before {
+    width: 25px;
+    height: 25px;
+  }
+
+  .govuk-checkboxes [type='checkbox'] + label::after {
+    border-width: 0 0 3px 3px;
+    width: 11px;
+    height: 4px;
+    top: 8px;
+    left: 6px;
+  }
+
+  .govuk-checkboxes__item > .govuk-reveal > .govuk-inset-text {
+    margin-left: -5px !important;
+  }
+
+  .govuk-inset-text {
+    margin-left: -30px;
+
+    .govuk-inset-text {
+      margin-left: -30px;
+      margin-top: $govuk-gutter-half;
+
+      input, textarea {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &.inline .govuk-inset-text {
+    margin-left: 10px;
+  }
+}
