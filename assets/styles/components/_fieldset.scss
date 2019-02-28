@@ -22,13 +22,13 @@
     min-height: auto;
   }
 
-   .govuk-radios [type='radio'] + label::after {
+  .govuk-radios [type='radio'] + label::after {
     border: 7px solid;
     top: 5px;
     left: 5px;
   }
 
-   .govuk-radios__label {
+  .govuk-radios__label {
     padding: 0;
   }
 
@@ -37,6 +37,7 @@
       padding-top: 1px;
       padding-bottom: 2px;
     }
+
     .govuk-checkboxes__label {
       padding: 3px 2px 5px;
     }
@@ -46,12 +47,12 @@
     }
   }
 
-  .govuk-checkboxes [type=checkbox] + label::before {
+  .govuk-checkboxes [type='checkbox'] + label::before {
     width: 25px;
     height: 25px;
   }
 
-  .govuk-checkboxes [type=checkbox] + label::after {
+  .govuk-checkboxes [type='checkbox'] + label::after {
     border-width: 0 0 3px 3px;
     width: 11px;
     height: 4px;
