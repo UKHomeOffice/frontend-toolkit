@@ -4,6 +4,25 @@
   font-weight: bold;
 }
 
+.govuk-form-group {
+  .govuk-fieldset__legend {
+    margin-bottom: 5px;
+
+    h2 {
+      margin-bottom: 0;
+    }
+  }
+
+  .govuk-hint p {
+    margin-top: $govuk-gutter-half;
+  }
+
+  .govuk-radios, .govuk-checkboxes {
+    margin-top: $govuk-gutter-half;
+    margin-bottom: $govuk-gutter;
+  }
+}
+
 .govuk-fieldset.inline {
   > .govuk-radios > .govuk-radios__item,
   > .govuk-checkboxes > .govuk-checkboxes__item {
