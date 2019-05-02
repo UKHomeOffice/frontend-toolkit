@@ -18,6 +18,31 @@ footer {
 
   // extend the white background to the bottom of the browser on short pages
   box-shadow: 0 50vh 0 50vh $white;
+
+  .footer-menu {
+    align-items: flex-end;
+    display: flex;
+
+    ul {
+      display: flex;
+      margin: 0;
+
+      li {
+        padding-left: 1.5em;
+        list-style: none;
+        font-size: 14px;
+      }
+
+      li a {
+        color: #3b3b3b;
+      }
+
+      li:first-child {
+        padding-left: 0;
+      }
+    }
+  }
+
 }
 
 @media (max-width: 690px) {
@@ -30,6 +55,10 @@ footer {
 
   .footer-menu {
     margin-top: 20px;
+
+    ul {
+      padding-left: 0;
+    }
   }
 
 }
