@@ -15,5 +15,9 @@
   &.button-warning {
     // @todo: we can replace with govuk-button--warning from govuk-frontend >= 2.11.0
     background: govuk-colour('red');
+
+    &:hover {
+      background: mix(#000, govuk-colour('red'), 20%);
+    }
   }
 }
