@@ -2,6 +2,7 @@
 
 .govuk-button {
   &.button-secondary {
+    // @todo we can replace with .govuk-button--secondary from govuk-frontend >= 2.11.0
     background: $white;
     color: $govuk-text-colour;
     border: 1px solid $govuk-border-colour;
@@ -9,5 +10,10 @@
     &:hover {
       background: $light-grey;
     }
+  }
+
+  &.button-warning {
+    // @todo: we can replace with govuk-button--warning from govuk-frontend >= 2.11.0
+    background: govuk-colour('red');
   }
 }
