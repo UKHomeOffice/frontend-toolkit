@@ -1,0 +1,23 @@
+
+kind: pipeline
+name: default
+type: kubernetes
+steps:
+  - name: install
+    image: node:12
+    commands:
+      - npm ci
+  - name: test
+    image: node:12
+    commands:
+      - npm test
+  - name: publish
+    image: plugins/npm
+    settings:
+      token:
+        from_secret: npm_token
+      email:
+        from_secret: npm_email
+    when:
+      event:
+        - tag
