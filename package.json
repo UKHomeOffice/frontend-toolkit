@@ -1,12 +1,13 @@
 {
   "name": "@ukhomeoffice/frontend-toolkit",
-  "version": "2.13.1",
+  "version": "3.0.0",
   "description": "Implementation of github.com/UKHomeOffice/design-system for use in projects",
   "main": "index.js",
   "styles": "./assets/styles/index.scss",
   "scripts": {
     "test": "npm run test:lint",
-    "test:lint": "sass-lint --max-warnings=0 --no-exit --verbose"
+    "test:lint": "sass-lint --max-warnings=0 --no-exit --verbose",
+    "build": "echo noop"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,6 @@
     "govuk-frontend": "^1.3.0"
   },
   "publishConfig": {
-    "access": "public"
+    "@ukhomeoffice:registry": "https://npm.pkg.github.com"
   }
 }

@@ -1,0 +1,9 @@
+name: 'Publish - npm'
+on:
+  pull_request:
+    types: [ closed ]
+
+jobs:
+  publish:
+    uses: UKHomeOffice/sas-github-workflows/.github/workflows/publish-npm.yml@v1
+    secrets: inherit
