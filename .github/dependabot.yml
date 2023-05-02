@@ -1,0 +1,28 @@
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "⬆️ "
+    pull-request-branch-name:
+      separator: "-"
+    reviewers:
+      - "UKHomeOffice/asl-devs"
+    labels:
+      - "skip-release"
+      - "dependencies"
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "⬆️ "
+    pull-request-branch-name:
+      separator: "-"
+    reviewers:
+      - "UKHomeOffice/asl-devs"
+    labels:
+      - "patch"
+      - "dependencies"

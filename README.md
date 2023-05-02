@@ -8,6 +8,8 @@ HTML components are shipped as nunjucks macro functions for maximal compatabilit
 
 ### Usage
 
+[Authenticate with GitHub packages](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry#authenticating-with-a-personal-access-token)
+
 To use a component inside a nunjucks template, first import the component, then call as a function:
 
 ```
@@ -87,3 +89,11 @@ A number of colour variables are defined in sass as shortcuts
 * <img src="./docs/images/colours/ho-link-visited.svg" width="20" height="20" /> `$ho-link-visited` - `#4C2C92`
 * <img src="./docs/images/colours/ho-link-hover.svg" width="20" height="20" /> `$ho-link-hover` - `#2B8CC4` (alias `$ho-link-active`)
 * <img src="./docs/images/colours/ho-link-focus.svg" width="20" height="20" /> `$ho-link-focus` - `#005798`
+
+## Publishing
+
+This is automatically published to the GitHub packages npm repository using GitHub Actions.
+
+When opening a pull request add a label `major`, `minor` or `patch` (or `skip-release`) and the version field in package.json will be updated by the pipeline using `npm version`.
+
+It is published once the pull request is merged if there is no `skip-release` label on the pull request, the SHA is also tagged with the SemVer value at that point.
