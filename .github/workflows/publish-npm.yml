@@ -5,5 +5,5 @@ on:
 
 jobs:
   publish:
-    uses: UKHomeOffice/sas-github-workflows/.github/workflows/publish-npm.yml@v1
+    uses: UKHomeOffice/sas-github-workflows/.github/workflows/publish-npm.yml@v2
     secrets: inherit
