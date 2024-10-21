@@ -1,6 +1,6 @@
 {
   "name": "@ukhomeoffice/frontend-toolkit",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Implementation of github.com/UKHomeOffice/design-system for use in projects",
   "main": "index.js",
   "styles": "./assets/styles/index.scss",
@@ -21,13 +21,13 @@
   },
   "homepage": "https://github.com/UKHomeOffice/frontend-toolkit#readme",
   "devDependencies": {
-    "express": "^4.16.3",
-    "node-sass-middleware": "^0.11.0",
-    "nunjucks": "^3.1.3",
+    "express": "^4.21.1",
+    "node-sass-middleware": "^1.1.0",
+    "nunjucks": "^3.2.4",
     "sass-lint": "^1.13.1"
   },
   "dependencies": {
-    "govuk-frontend": "^1.3.0"
+    "govuk-frontend": "^5.7.1"
   },
   "publishConfig": {
     "@ukhomeoffice:registry": "https://npm.pkg.github.com"
