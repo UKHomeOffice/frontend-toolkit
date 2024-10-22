@@ -5,7 +5,7 @@
   margin: 0 auto;
   font-size: 14px;
   font-family: 'Inter UI', sans-serif !important;
-  color: govuk-colour('grey-1');
+  color: $grey-1;
 }
 
 footer {
@@ -26,7 +26,7 @@ footer {
 
   ul.default-links {
     width: 100%;
-    border-top: 1px solid govuk-colour('grey-1');
+    border-top: 1px solid $grey-1;
     padding: $govuk-gutter-half 0 0;
 
     li {
@@ -44,8 +44,8 @@ footer {
       margin-right: $govuk-gutter;
 
       h3 {
-        color: govuk-colour('grey-1');
-        border-bottom: 1px solid govuk-colour('grey-1');
+        color: $grey-1;
+        border-bottom: 1px solid $grey-1;
         padding-bottom: 5px;
         margin-bottom: 10px;
       }

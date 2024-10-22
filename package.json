@@ -27,7 +27,8 @@
     "sass-lint": "^1.13.1"
   },
   "dependencies": {
-    "govuk-frontend": "^5.7.1"
+    "govuk-frontend": "^5.7.1",
+    "sass": "^1.80.3"
   },
   "publishConfig": {
     "@ukhomeoffice:registry": "https://npm.pkg.github.com"
