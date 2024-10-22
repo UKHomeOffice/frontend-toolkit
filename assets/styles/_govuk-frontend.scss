@@ -1,8 +1,10 @@
-@import 'govuk-frontend/settings/all';
-@import 'govuk-frontend/tools/all';
-@import 'govuk-frontend/helpers/all';
+@import 'govuk-frontend/dist/govuk/settings/all';
+@import 'govuk-frontend/dist/govuk/tools/all';
+@import 'govuk-frontend/dist/govuk/helpers/all';
 
-@import 'govuk-frontend/core/all';
-@import 'govuk-frontend/objects/all';
+@import 'govuk-frontend/dist/govuk/core/all';
+@import 'govuk-frontend/dist/govuk/objects/all';
 
-@import 'govuk-frontend/overrides/all';
+@import 'govuk-frontend/dist/govuk/overrides/all';
+
+
