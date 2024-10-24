@@ -5,6 +5,9 @@ $govuk-font-family: 'Inter UI', Helvetica, Arial, sans-serif !default;
 
 @import 'reset';
 @import 'govuk-frontend';
+@import "govuk-frontend/dist/govuk/base";
+@import "govuk-frontend/dist/govuk/helpers/colour";
+@import "@ukhomeoffice/frontend-toolkit/assets/styles/colours";
 
 @import 'colours';
 @import 'default';
@@ -15,3 +18,4 @@ $govuk-font-family: 'Inter UI', Helvetica, Arial, sans-serif !default;
 @import 'components/header';
 @import 'components/footer';
 @import 'components/table';
+@import 'components/beta-banner';

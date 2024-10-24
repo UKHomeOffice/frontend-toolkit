@@ -13,7 +13,7 @@
     }
   }
 
-  background-color: govuk-colour('grey-3');
+  background-color: govuk-colour('light-grey');
   padding: 5px;
   margin-bottom: $govuk-gutter;
 
@@ -52,14 +52,14 @@
       cursor: pointer;
       margin-bottom: -1px;
       padding: 5px 8px;
-      background-color: govuk-colour('grey-3');
+      background-color: govuk-colour('light-grey');
 
       &:hover {
-        background-color: govuk-colour('grey-2');
+        background-color: govuk-colour('mid-grey');
       }
 
       &:hover + .options-container {
-        border-color: govuk-colour('grey-2');
+        border-color: govuk-colour('mid-grey');
       }
 
       &[disabled] {
@@ -89,7 +89,7 @@
   background-color: $background;
   overflow-y: auto;
   overflow-x: hidden;
-  border: 5px solid govuk-colour('grey-3');
+  border: 5px solid govuk-colour('light-grey');
 
   .govuk-checkboxes__item {
     @include govuk-media-query($until: tablet) {
