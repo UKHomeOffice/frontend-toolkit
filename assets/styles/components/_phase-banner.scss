@@ -1,11 +1,6 @@
 @import 'govuk-frontend/dist/govuk/components/phase-banner/phase-banner';
 
-.govuk-phase-banner {
-  border-bottom: 0;
-  padding-bottom: 0;
-
-  .govuk-width-container {
-    border-bottom: 1px solid $govuk-border-colour;
-    padding-bottom: 10px;
-  }
+.phase-banner {
+  @include govuk-exports("govuk-frontend/dist/govuk/components/phase-banner/phase-banner");
+  font-size: 16px;
 }
